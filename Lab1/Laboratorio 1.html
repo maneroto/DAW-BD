@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Laboratorio 1 DAW y BD</title>
+	<meta charset="utf-8">
+
+	<!-- Sí, sé que el estilo debería de ir en un archivo a parte, pero la verdad me ha dado algo de flojera y no planeo subir 2 archivos -->
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			border: none;
+			text-decoration: none;
+		}
+
+		html, body
+		{
+			width: 100%;
+			height: 100%;
+			font-size: 2.8vmin;
+		}
+
+		section
+		{
+			width: 90%;
+			margin: 0 auto;
+			border-bottom: 10px solid rgba(200,200,200,0.5);
+			padding: 5vh 3vw;
+		}
+
+		footer
+		{
+			width: 100%;
+			color: #fff;
+			background: #555;
+			margin-top: 8vh;
+			padding: 6vh 0;
+		}
+
+		header
+		{
+			margin: 0 auto;
+			font-size: 3.5vmin;
+			background: #aaccff;
+			color: #fff;
+			text-align: center;
+			padding: 8vh 0;
+		}
+
+		td
+		{
+			text-align: center;
+		}
+
+		#ttitle td
+		{
+			background: #aaccff;
+			color: #fff;
+		}
+
+		.tcolor td
+		{
+			background: #aaa;
+		}
+
+		h2,h3
+		{
+			margin: 3vh 0;
+		}
+
+		ul
+		{
+			list-style: none;
+			margin-top: 3vh;
+		}
+
+		li
+		{
+			margin-left: 3vw;
+		}
+
+		ul li::before 
+		{
+			content: "\2022";
+			color: #aaccff;
+			font-weight: bold;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em; 
+  		}
+		table
+		{
+			margin: 5vh auto 0 auto;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>
+			El inicio de la triste y cruel historia de DAW y BD.
+		</h1>
+	</header>
+	<section id="personal">
+		<article>
+			<p>
+				El día de hoy, <strong>martes 16 de enero del 2018</strong> ha iniciado la clase del jóven alumno del <strong>Tecnológico de Monterrey, Campus Querétaro: Emmanuel Antonio Ramírez Herrera</strong> a quien le pertenece la matrícula <strong>A01703442</strong>.
+			</p><br>
+			<p>
+				Tristemente, las dudas nunca cesan, por lo mismo, en ésta pequeña, pero informativa página, se le explicarán algunos conceptos necesarios para que <strong>Emmanuel</strong> pueda continuar en su curso.
+				<br><br>
+				<strong>Nota: Haremos sentir mejor a Emmanuel diciéndole Mane.</strong>
+			</p>
+		</article>
+	</section>
+
+	<section id="descriptions">
+		<article class="description">
+			<h2>
+				MANE, TE PRESENTO A HTTP: SUS MÉTODOS DE PETICIÓN Y CÓDIGOS DE ERROR.
+			</h2>
+			<p>
+				<H3>Inciemos explicándote el significado de HTTP</H3>
+				Mane no sabe el significado de HTTP, por lo que, nosotros, bien informados, le explicamos que el <em>Hypertext Transfer Protocol (Protocolo de Transferencia de Hipertexto)</em> es el set de reglas para la transferencia de archivos en la red. Así que cada que un usuario abre un navegador web, indirectamente está hacienddo uso de HTTP que a su vez corre sobre los protocolos de TCP/IP.<br>
+				Y Mane también debería saber que HTTP incluye la idea de que los archivos pueden referenciar a otros archivos que al momento de ser seleccionados puedan brindar peticiones de transferencia adicionales. <span class="link">[1]</span>
+			</p>
+			<p>
+				<h3>Mane, deberías saber que HTTP utiliza métodos de petición.</h3>
+				Los métodos de petición ayudan a que el usuario pueda realizar distintas peticiones a diversos archivos/páginas y que tanto el usuario, como la misma página, puedan interactuar con la información y otros archivos. Podemos encontrar diversas peticiones, algunas de ellas se muestran en la siguiente tabla. (Si puedes memorizar algunos estaría excelente).<br>
+
+				<table>
+					<!-- Encabezado de la tabla -->
+					<thead>
+						<tr id="ttitle">
+							<td>Método</td>
+							<td>Descripción</td>
+						</tr>
+					</thead>
+					<!-- Datos contenidos en la tabla -->
+					<tbody>
+						<tr>
+							<td>GET</td>
+							<td>
+								Transfiere una representación actual de el recurso seleccionado.
+							</td>
+						</tr>
+						<tr class="tcolor">
+							<td>HEAD</td>
+							<td>
+								Igual que GET, pero solo transfiere la línea de estado y la sección del encabezado.
+							</td>
+						</tr>
+						<tr>
+							<td>POST</td>
+							<td>
+								Realiza el procesamiento específico de recursos en la carga útil de solicitud.
+							</td>
+						</tr>
+						<tr class="tcolor">
+							<td>PUT</td>
+							<td>
+								Reemplaza todas las representaciones actuales del recurso seleccionado con la carga útil requerida.
+							</td>
+						</tr>
+						<tr>
+							<td>DELETE</td>
+							<td>
+								Remueve todas las representaciones actuales del recurso seleccionado.
+							</td>
+						</tr>
+						<tr class="tcolor">
+							<td>CONNECT</td>
+							<td>
+								Establece un tunel con el servidor identificado por el recurso seleccionado.
+							</td>
+						</tr>
+						<tr>
+							<td>OPTIONS</td>
+							<td>
+								Describe las opciones de comunicación para el recurso seleccionado.
+							</td>
+						</tr>
+						<tr class="tcolor">
+							<td>TRACE</td>
+							<td>
+								Realiza una prueba de retorno de mensaje a lo largo de la ruta al recurso de destino.
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<center><span class="link">[2]</span></center><br>
+				También requieres saber que cada método de petición tiene sus pros y sus contras ya que por ejemplo, <strong>si quisieras mandar la información de usuario y contraseña a algún archivo, el método óptimo sería POST</strong>, ya que es un método que envía la información de manera segura, mientras que por ejemplo <strong>GET muestra dicha información en la misma URL y suele ser usado para que un navegador web acceda a una página de internet.</strong><span class="link">[3]</span>
+			</p>
+			<p>
+				<h3>Sí, Mane, HTTP también te responde y sí, hay errores.</h3>
+				HTTP tiene códigos de estado de respuesta que nos indican si se ha completado satisfactoriamente una solicitud HTTP específica. Las respuestas pueden ser de 5 clases: 
+				<ul>
+					<li>Respuestas informativas</li>
+					<li>Respuestas satisfactorioas</li>
+					<li>Redirecciones</li>
+					<li><strong>Errores de los clientes</strong></li>
+					<li><strong>Errores de los servidores</strong></li>
+				</ul>
+				<br>
+				Los códigos de errores de los usuarios están comprendidos entre el código 400 y el código 451. Estos mensajes aparencen en diversas situaciones que implican al usuario, por ejemplo: sintáxis inválida (error 400), no se encuentra el contenido solicitado o se ha borrado (errores 404 y 410), no posee permisos necesarios (error 401 o 403), etc.
+				<br>
+			</p>
+		</article>
+	</section>
+	<footer>
+		<article id="references">
+			<h2>REFERENCIAS.</h2>
+			<p>[1] https://searchwindevelopment.techtarget.com/definition/HTTP</p>
+			<p>[2] https://tools.ietf.org/html/rfc7231</p>
+			<p>[3] https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/</p>
+		</article>
+	</footer>
+</body>
+</html>
