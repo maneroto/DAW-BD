@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-mx">
 <head>
 	<title>Laboratorio 1 DAW y BD</title>
 	<meta charset="utf-8">
@@ -14,11 +14,18 @@
 			text-decoration: none;
 		}
 
+		.link
+		{
+			font-size: 50%;
+			font-family: cursive;
+		}
+
 		html, body
 		{
 			width: 100%;
 			height: 100%;
 			font-size: 2.8vmin;
+			cursor: pointer;
 		}
 
 		section
@@ -27,6 +34,7 @@
 			margin: 0 auto;
 			border-bottom: 10px solid rgba(200,200,200,0.5);
 			padding: 5vh 3vw;
+			transition: all 1s;
 		}
 
 		footer
@@ -36,6 +44,7 @@
 			background: #555;
 			margin-top: 8vh;
 			padding: 6vh 0;
+			text-align: center;
 		}
 
 		header
@@ -92,6 +101,11 @@
 		table
 		{
 			margin: 5vh auto 0 auto;
+		}
+
+		section:hover
+		{
+			background: rgba(200,200,255,0.5);
 		}
 		
 	</style>
@@ -202,9 +216,42 @@
 					<li><strong>Errores de los clientes</strong></li>
 					<li><strong>Errores de los servidores</strong></li>
 				</ul>
+				<span class="link">[4]</span>
 				<br>
-				Los códigos de errores de los usuarios están comprendidos entre el código 400 y el código 451. Estos mensajes aparencen en diversas situaciones que implican al usuario, por ejemplo: sintáxis inválida (error 400), no se encuentra el contenido solicitado o se ha borrado (errores 404 y 410), no posee permisos necesarios (error 401 o 403), etc.
-				<br>
+				Los códigos de errores de los usuarios están comprendidos entre el código 400 y el código 451. Estos mensajes aparencen en diversas situaciones que implican al usuario, por ejemplo: sintáxis inválida (error 400), <strong>no se encuentra el contenido solicitado (error 404)</strong>, no posee permisos necesarios (error 401 o 403), etc.
+				<br><br>
+				Los códigos de errores de los servidores están comprendidos entre el código 500 y el código 511. Estos mensajes aparecen cuando existe algún error de código o en los servidores que alojan a la página web, por ejemplo: <strong>error del servidor interno (error 500)</strong>, ciclo detectado (error 508), autentificación de red requerida (error 511), etc.
+				<br><br>
+				<h4>Así que si en la página que planeas hacer aparece un código de error 404, tú tranquilo, todo esta 200 (o bueno, todo está bien) y no debes preocuparte por intentar corregirlo. Pero si ves un código de error 500 preocúpate, porque entonces ese fué un error tuyo que tienes que corregir.</h4>
+				<span class="link">[5]</span>
+			</p>
+		</article>
+	</section>
+
+	<section id="html">
+		<article class="description">
+			<h2>ES HORA DE CONOCER HTML5.</h2>
+			<p>
+				<h3>Sobre el internet.</h3>
+				El internet se refiere al sistema de información global que está lógicamente conectado por una dirección única global basada en el IP, o subsecuentes conexiones. Es capáz de soportar comunicaciones a través del uso de TCP/IP y otros protocolos compatibles al IP.
+				<br><br>
+				Suele ser confundido con el <em>WWW (World Wide Web)</em>, pero ésta es solo una convención que indica la dirección a la que pertenece la web y que ayuda a que el usuario pueda navegar a través de la web con un formato más amigable y fácil de entender.<br>
+				<span class="link">[6]</span>
+			</p>
+			<p>
+				<h3>Para crear una página web.</h3>
+				Se pueden crear páginas web haciendo uso de diversas herramientas y lenguajes, pero para ello debes conocer primero para qué te pueden ayudar cada una de ellas, por ejemplo:
+				<ul>
+					<li><strong>Javascript: </strong> Javasacript permite hacer modificaciones a los tags, basándose en DOM, este lenguaje ayuda a determinar el comportamiento que una página web va a tener. Te proporciona a tí como programador, la opción de añadir diversos efectos e interacciones con la página que sin la ayuda de este lenguaje no podrías.</li>
+					<br>
+					<li><strong>PHP: </strong> Es un lenguaje preprocesador que permite el ser combinado fácilmente con html y que al igal que javascript, permite el dar comportamientos a la página web.</li>
+					<br>
+					<li><strong>XML:</strong> Te provee de diversos tags donde, por cada etiqueta debes de especificar sus atributos, la información que contiene y debe de tener una etiqueta de inicio y una de cierre.</li>
+					<br>
+					<li><strong>XHTML: </strong> Que es la evolución de XML, lo cual es un intento por estandarizar y facilitar la escritura y lectura para la creación de las páginas web. Podría decirse que es el padre de HTML.</li>
+					<br>
+					<li><strong>HTML5: </strong> Puede verse como un intérprete de texto a estructura web, ya que se encarga de que, al momento de escibirle los diversos tags y etiquetas que existen, genera esos elementos en la página. Su versión anterior fué HTML4 y sí, tienen varias diferencias. Parte de estas diferencias es que HTML5 ha despreciado o vuelto obsoletas varias etiquetas que existían en HTML4 (deprecated tags), por ejemplo: &lt;center&gt;, &lt;frameset&gt;, &lt;big&gt;, &lt;b&gt;, &lt;i&gt;, etc. A parte, en HTML5 no se requiere que se cieren diversas etiquetas que en HTML4 sí requieren su tag de cierre y, otra diferencia notable es que HTML5 añadió tags para que fuera más legible la creación de páginas como &lt;section&gt; y &lt;article&gt;</li>
+				</ul>
 			</p>
 		</article>
 	</section>
@@ -214,6 +261,9 @@
 			<p>[1] https://searchwindevelopment.techtarget.com/definition/HTTP</p>
 			<p>[2] https://tools.ietf.org/html/rfc7231</p>
 			<p>[3] https://michelletorres.mx/peticiones-http-get-post-put-delete-etc/</p>
+			<p>[4] https://developer.mozilla.org/es/docs/Web/HTTP/Status</p>
+			<p>[5] https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</p>
+			<p>[6] https://tecnologia-informatica.com/que-es-internet-nacio-como-funciona-internet/</p>
 		</article>
 	</footer>
 </body>
