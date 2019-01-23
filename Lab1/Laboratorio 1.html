@@ -42,9 +42,15 @@
 			width: 100%;
 			color: #fff;
 			background: #555;
-			margin-top: 8vh;
+			margin-top: 0;
 			padding: 6vh 0;
 			text-align: center;
+			transition: all 0.5s;
+		}
+
+		footer:hover
+		{
+			color: #aaccff;
 		}
 
 		header
@@ -101,11 +107,31 @@
 		table
 		{
 			margin: 5vh auto 0 auto;
+			transition: font-size 0.2s;
+		}
+
+		@-ms-viewport table:hover
+		{
+			font-size: 110%;
 		}
 
 		section:hover
 		{
 			background: rgba(200,200,255,0.5);
+		}
+
+		#www
+		{
+			width: 30%;
+			display: block;
+			margin: 0 auto;
+			transition: all 0.8s;
+		}
+
+		#www:hover
+		{
+			width: 35%;
+			transform: rotate(20deg);
 		}
 		
 	</style>
@@ -237,11 +263,14 @@
 				<br><br>
 				Suele ser confundido con el <em>WWW (World Wide Web)</em>, pero ésta es solo una convención que indica la dirección a la que pertenece la web y que ayuda a que el usuario pueda navegar a través de la web con un formato más amigable y fácil de entender.<br>
 				<span class="link">[6]</span>
+				<img src="images/www.svg" id="www">
 			</p>
 			<p>
 				<h3>Para crear una página web.</h3>
 				Se pueden crear páginas web haciendo uso de diversas herramientas y lenguajes, pero para ello debes conocer primero para qué te pueden ayudar cada una de ellas, por ejemplo:
 				<ul>
+					<li><strong>JSP: </strong><em>JavaServer Pages</em> es una tecnología que ayuda a los desarrolladores de software a crear páginas web dinámicas basadas en HTML y XML, entre otros tipos de documentos. JSP es similar a PHP, pero usa el lenguaje de programación Java.</li><span class="link">[7]</span>
+					<li><strong>AJAX: </strong>Es el acrónimo de <em>Asynchronous Javascript and XML</em> y se define como una técnica para el desarrollo de páginas (sitios) web que implementan aplicaciones interactivas.</li><span class="link">[8]</span>
 					<li><strong>Javascript: </strong> Javasacript permite hacer modificaciones a los tags, basándose en DOM, este lenguaje ayuda a determinar el comportamiento que una página web va a tener. Te proporciona a tí como programador, la opción de añadir diversos efectos e interacciones con la página que sin la ayuda de este lenguaje no podrías.</li>
 					<br>
 					<li><strong>PHP: </strong> Es un lenguaje preprocesador que permite el ser combinado fácilmente con html y que al igal que javascript, permite el dar comportamientos a la página web.</li>
@@ -250,8 +279,22 @@
 					<br>
 					<li><strong>XHTML: </strong> Que es la evolución de XML, lo cual es un intento por estandarizar y facilitar la escritura y lectura para la creación de las páginas web. Podría decirse que es el padre de HTML.</li>
 					<br>
-					<li><strong>HTML5: </strong> Puede verse como un intérprete de texto a estructura web, ya que se encarga de que, al momento de escibirle los diversos tags y etiquetas que existen, genera esos elementos en la página. Su versión anterior fué HTML4 y sí, tienen varias diferencias. Parte de estas diferencias es que HTML5 ha despreciado o vuelto obsoletas varias etiquetas que existían en HTML4 (deprecated tags), por ejemplo: &lt;center&gt;, &lt;frameset&gt;, &lt;big&gt;, &lt;b&gt;, &lt;i&gt;, etc. A parte, en HTML5 no se requiere que se cieren diversas etiquetas que en HTML4 sí requieren su tag de cierre y, otra diferencia notable es que HTML5 añadió tags para que fuera más legible la creación de páginas como &lt;section&gt; y &lt;article&gt;</li>
+					<li><strong>HTML5: </strong> Puede verse como un intérprete de texto a estructura web, ya que se encarga de que, al momento de escibirle los diversos tags y etiquetas que existen, genera esos elementos en la página. Su versión anterior fué HTML4 y sí, tienen varias diferencias. Parte de estas diferencias es que HTML5 ha despreciado o vuelto obsoletas varias etiquetas que existían en HTML4 (deprecated tags), por ejemplo: &lt;center&gt;, &lt;frameset&gt;, &lt;big&gt;, &lt;b&gt;, &lt;i&gt;, etc. A parte, en HTML5 no se requiere que se cieren diversas etiquetas que en HTML4 sí requieren su tag de cierre y, otra diferencia notable es que HTML5 añadió tags para que fuera más legible la creación de páginas como &lt;section&gt; y &lt;article&gt;; o en tablas, ya que ahora, para la creación de una tabla, se usan los tags &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;th&gt;, &lt;tr&gt; y &lt;td&gt;.</li>
 				</ul>
+			</p>
+		</article>
+	</section>
+	<section id="faltantes">
+		<h2>DESCRIPCIONES FALTANTES.</h2>
+		<article>
+			<p>
+				<strong>URL: </strong><em>Uniform Resource Locator</em> es una secuencia de caracteres que sigue un estándar y que permite denominar recursos dentro del entorno de internet pra que puedan ser localizados.
+				<br>
+				<span class="link">[7]</span>
+				<br>
+				<strong>MIME: </strong><em>Multipurpose Internet Mail Extensions</em> son una serie de convenciones o especificaciones dirigidas al intercambio a través de Internet de todo tipo de archivos de forma transparente para el usuario.
+				<br>
+				<span class="link">[8]</span>
 			</p>
 		</article>
 	</section>
@@ -264,6 +307,10 @@
 			<p>[4] https://developer.mozilla.org/es/docs/Web/HTTP/Status</p>
 			<p>[5] https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</p>
 			<p>[6] https://tecnologia-informatica.com/que-es-internet-nacio-como-funciona-internet/</p>
+			<p>[7] https://es.wikipedia.org/wiki/JavaServer_Pages</p>
+			<p>[8] https://www.digitallearning.es/blog/que-es-ajax/</p>
+			<p>[9] https://definicion.de/url/</p>
+			<p>[10] https://es.wikipedia.org/wiki/Multipurpose_Internet_Mail_Extensions</p>
 		</article>
 	</footer>
 </body>
