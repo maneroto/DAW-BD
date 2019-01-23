@@ -1,0 +1,39 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+}
+
+section, footer
+{
+	width: 90%;
+	margin: auto;
+	background: #ccc;
+	padding: 4vh 3vw;
+}
+
+h1
+{
+	color: #579;
+	margin: 2vh auto;
+	border-bottom: solid 5px rgba(85, 119, 153, 0.7);
+}
+
+ul, ol
+{
+	margin-left: 3vw;
+}
+
+footer
+{
+	background: #555;
+	color: white;
+}
