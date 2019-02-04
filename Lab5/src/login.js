@@ -23,6 +23,11 @@ function setupInputs()
 				if (this.value == "") this.parentElement.classList.remove("focused");
 			}
 			);
+		inputs[i].addEventListener(
+			"keyup", function(event)
+			{
+				if (event.key == "Enter") logIn();
+			});
 	}
 }
 
@@ -33,7 +38,7 @@ function logIn()
 	let errorMessage = document.querySelector(".errorMessage");
 	if (userExists(user))
 	{
-		if (users[user] == encrypt(password)) window.location.assign("https://www.google.com/");
+		if (users[user] == encrypt(password)) window.location.assign("src/shop.html");
 		else errorMessage.innerHTML = "<br><br>Contraseña incorrecta<br>";
 	}
 	else errorMessage.innerHTML = "<br><br>Usuario incorrecto<br>";

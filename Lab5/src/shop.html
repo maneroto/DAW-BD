@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+	<title>Lab5 Shop</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style/shop.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav>
+		<div id = "Price">
+			<i class="fas fa-hand-holding-usd"></i>
+			<span>Total: $</span><span id = "totalToPay">0</span>
+		</div>
+		<div id = "Pay">
+			<i class="fas fa-shopping-cart"></i>
+			<span>Pagar</span>
+		</div>
+	</nav>
+	<section>
+		<article>
+			<img src="../image/lightsaber.png">
+			<div class="itemSelector">
+				<p class="itemPrice">Precio por unidad: $<span class = "unitPrice">3500</span></p>
+				<p class="inStock">Artículos restantes: <span class = "itemsInStock">22</span></p>
+				<p><input type="number" name="quantity" min = "0" class="unitSelector">
+					<span class="acceptItems"><i class="fas fa-check-circle"></i></span>
+				</p>
+			</div>
+		</article>
+		<article>
+			<img src="../image/robounicorn.jpg">
+			<div class="itemSelector">
+				<p class="itemPrice">Precio por unidad: $<span class = "unitPrice">5200</span></p>
+				<p class="inStock">Artículos restantes: <span class = "itemsInStock">11</span></p>
+				<p><input type="number" name="quantity" min = "0" class="unitSelector">
+					<span class="acceptItems"><i class="fas fa-check-circle"></i></span>
+				</p>
+			</div>
+		</article>
+		<article>
+			<img src="../image/spaceship.jpg">
+			<div class="itemSelector">
+				<p class="itemPrice">Precio por unidad: $<span class = "unitPrice">35000</span></p>
+				<p class="inStock">Artículos restantes: <span class = "itemsInStock">10</span></p>
+				<p><input type="number" name="quantity" min = "0" class="unitSelector">
+					<span class="acceptItems"><i class="fas fa-check-circle"></i></span>
+				</p>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>
+			Designed By | Emmanuel Antonio Ramírez Herrera<br>
+			<a href="https://github.com/maneroto/DAW-BD"><i class="fab fa-github"></i></a>
+		</p>
+	</footer>
+	<script type="text/javascript" src="../src/shop.js"></script>
+</body>
+</html>

@@ -56,25 +56,25 @@ label
 {
 	transform: translateY(-125%);
 	font-size: 2vmin;
-	color: #fff;
+	color: #000;
 }
 input
 {
-	background: rgba(170, 204, 255, 0.5);
+	background: rgba(255, 255, 255, 0.25);
 	z-index: 1;
 	padding: 0 1vw 0 1vw;
 	position: relative;
 	transition: box-shadow 150ms ease-out, background 150ms ease-out;
 	width: 30vw;
 	font-size: 4vmin;
-	color: #fff;
+	color: #000;
 	&:focus {
     box-shadow: 0 2px 0 0 blue;
   }
 }
 .focused input
 {
-	background: rgba(170, 204, 255,1);
+	background: rgba(255, 255, 255,1);
 }
 .focused label span
 {
@@ -91,13 +91,13 @@ button
 	width: 20vw;
 	font-size: 4vmin;
 	cursor: pointer;
-	color: #fff;
-	background: #99bbee;
+	color: #000;
+	background: #fff;
 	transition: background 350ms ease-out, color 350ms ease-out;
 }
 button:hover
 {
-	background: #fff;
+	background: #000;
 	color: #99bbee;
 }
 button:active
