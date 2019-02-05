@@ -45,6 +45,7 @@ nav #Pay:hover
 	cursor: pointer;
 	background: rgba(50, 50, 50, 0.95);
 }
+
 section
 {
 	margin: 0 auto;
@@ -54,6 +55,20 @@ section
 	grid-gap: 3vw;
 	grid-template-columns: repeat(auto-fill, minmax(23em, 1fr));
 }
+
+@media only screen and (max-width: 1024px)
+{
+	section
+	{
+		width: 90%;
+		display: block;
+	}
+	section article
+	{
+		margin-top: 3vh;
+	}
+}
+
 section article
 {
 	background: rgba(50,50,50,0.5);
