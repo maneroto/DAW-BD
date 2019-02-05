@@ -39,7 +39,7 @@ nav div
 	color: #fff;
 	transition: background 300ms ease-out, line-height 150ms ease-out;
 }
-nav div:hover
+nav #Pay:hover
 {
 	line-height: 9.8vh;
 	cursor: pointer;
