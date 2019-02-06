@@ -1,0 +1,87 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	outline: none;
+	font-family: 'Playfair Display', serif;
+}
+html, body
+{
+	width: 100%;
+	height: 100%;
+}
+.relative
+{
+	position: relative;
+}
+header
+{
+	width: 100%;
+	height: 20vh;
+	line-height: 20vh;
+	background-color: #333;
+	text-align: center;
+}
+header #pageTitle
+{
+	font-size: 10vmin;
+	color: #fff;
+}
+section
+{
+	width: 100%;
+	padding: 5vh 0;
+}
+section article
+{
+	width: 90%;
+	padding: 1% 0;
+	margin: 2% 5%;
+	background: #555;
+	color: #fff;
+}
+section article h2
+{
+	font-size: 3.5vmin;
+	margin-left: 5%;
+}
+section article .articleDiv
+{
+	padding: 2px 0 3px 4%;
+	width: 100%;
+	height: 20vh;
+	line-height: 20vh;
+}
+#tutorials
+{
+	background: #ddd;
+}
+#thirtyTop
+{
+	position: absolute;
+	top: 40px;
+}
+#styledText
+{
+	font-size: 2.5vmin;
+	font-family: cursive;
+}
+#visibility
+{
+	visibility: hidden;
+}
+footer
+{
+	text-align: center;
+	width: 100%;
+	height: 10vh;
+	line-height: 10vh;
+	background: #333;
+}
+footer #author
+{
+	font-size: 3vmin;
+	color: #fff;
+}
