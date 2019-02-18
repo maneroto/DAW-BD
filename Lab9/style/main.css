@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 4vmin;
+    text-decoration: none;
+}
+body, html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background: #333;
+    color: #ccc;
+    cursor: crosshair;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 225%;
+}
+
+#content
+{
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    background: #bbb;
+    color: #222;
+    overflow-y: scroll;
+}
+
+#content::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+}
+#content:hover::-webkit-scrollbar
+{
+    display: block;
+}
+#content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
+}
+#content::-webkit-scrollbar-thumb {
+    background: #aaccff;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5);
+}
+
+.section
+{
+    width: 80%;
+    background: rgba(100,100,100,0.5);
+    margin: 5vh auto;
+    padding: 5vh 2vw 10vh 5vw;
+    transition: all 1s ease-out;
+}
+
+.section:hover
+{
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.8);
+}
+
+.section h2
+{
+    text-align: center;
+    color: #fff;
+    font-size: 175%;
+}
+
+.section p
+{
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.section ul
+{
+    text-align: center;
+}
+
+.section table
+{
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section table tr td, .section table tr th
+{
+    border: 1px solid #aaccff;
+    background: rgba(200,200,200,0.5);
+}
+.section table tr th
+{
+    background: rgba(170,204,255,0.7);
+}
