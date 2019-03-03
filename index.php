@@ -23,9 +23,9 @@
       <a href="lab7/lab7.html"><img class="breakpoint" src="index/images/lab7.png"></a>
       <a href="lab8/lab8.zip" download=""><img class="breakpoint" src="index/images/lab8.png"></a>
       <a href="lab9/index.php"><img class="breakpoint" src="index/images/lab9.png"></a>
-      <a href="lab10/lab10.zip" download=""><img class="breakpoint" src="index/images/lab10.png"></a>
+      <a href="lab10/lab10A01703442.zip" download=""><img class="breakpoint" src="index/images/lab10.png"></a>
       <a href="lab11/lab11.zip" download=""><img class="breakpoint" src="index/images/lab11.jpg"></a>
-      <a href="lab12/lab12.zip" download=""><img class="breakpoint" src="index/images/lab12.png"></a>
+      <a href="lab12/lab12_A01703442.zip" download=""><img class="breakpoint" src="index/images/lab12.png"></a>
     </div>
   </section>
   <footer>

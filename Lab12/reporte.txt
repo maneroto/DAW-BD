@@ -1,0 +1,67 @@
+REPORTE DE LABORATORIO 12
+
+Si existe alguna inconsistencia en la tabla de materiales,
+¿Cuál es? y ¿A qué se debe?
+Sí hay una inconsistencia en la tabla y es que existen 2
+productos con la misma clave, lo cual se debe a que no tenemos
+establecido que la clave sea una llave primaria.
+
+¿Qué ocurrió al volver a ejecutar el comando INSERT?
+No ha permitido el insertar un registro con la misma clave, debido
+a que por ser llave primaria no puede haber dos registros con la misma
+llave
+
+¿Qué información muestra la consulta "sp_helpconstraint materiales"?
+Muestra todos los campos que tienen algún tipo de restricción, en
+este caso, en materiales existe la restricción de llave primaria en
+la Clave
+
+¿Qué sentencias han sido utilizadas para definir las llaves
+primarias restantes?
+ALTER TABLE Proveedores add constraint llaveProveedores 
+PRIMARY KEY (RFC) 
+ALTER TABLE Proyectos add constraint llaveProyectos 
+PRIMARY KEY (Numero) 
+
+¿Qué sentencias utilizaste para definir el constraint de Entregan?
+ALTER TABLE Entregan ADD CONSTRAINT llaveEntregan 
+PRIMARY KEY (Clave, RFC, Numero, Fecha)
+
+Al insertar en la tabla entregan los valores 
+(0,'xxx', 0, '1-jan-02', 0), ¿Qué particularidad se observan en los
+valores para la clave, rfc y número?
+Que los valores dados no son consistentes con respecto a los materiales,
+los proveedores y los proyectos que se tienen en la base de datos.
+
+¿Cómo responde el sistema a la inserción de este registro?
+Sin problema alguno inserta el elemento que se le pidió insertar
+
+¿Qué significa el mensaje que emite el sistema?
+Significa que no se ha podido insertar el elemento debido a que no se
+encuentran los elementos en las tablas correspondientes
+
+¿Qué significado tieen la sentencia anterior?
+Crea una restricción de llave foránea que asegura que los elementos
+existan en una tabla de la base de datos
+
+¿Qué significan las columnas de las consultas sp_helpconstraint tableName?
+constraint_keys: el nombre de las llaves
+constraint_type: el tipo de las llaves
+constraint_name: el nombre que tiene la llave
+delete_action: qué sucede al borrarla
+status_for_replication: si replica la llave desde el orígen
+update_action: el cómo realiza las actualizaciones
+status_enabled: si se encuentra activo
+
+¿Qué uso se le está dando a GETDATE()?
+Obtener la fecha actual
+
+¿Tiene sentido el valor del campo de cantidad?
+No, porque no tiene sentido que te entreguen 0 de alguna cosa
+
+Al insertar un registro con cantidad igual o menor que 0
+¿Cómo responde el sistema? y ¿qué significa el mensaje?
+No permite que se ingresen los valores dado a que se tiene un valor
+que se encuentra fuera del rango.
+
+
