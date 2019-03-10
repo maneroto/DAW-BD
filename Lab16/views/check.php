@@ -1,0 +1,17 @@
+<?php
+    include("../sections/_header.php");
+?>
+<?php
+    include("../sections/_allFruits.php");
+?>
+<hr>
+<?php
+    include("../sections/_fruitsByName.php");
+?>
+<hr>
+<?php
+    include("../sections/_cheapestFruits.php");
+?>
+<?php
+    include("../sections/_footer.php");
+?>

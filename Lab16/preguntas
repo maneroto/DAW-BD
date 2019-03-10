@@ -1,0 +1,9 @@
+¿Por qué es una buena práctica separar el modelo del controlador?
+Es importante el separar el modelo del controlador porque así, si requerimos cambiar la 
+estructura del modelo, no habrá tanto problema con el controlador, y viceversa.
+
+¿Qué es SQL injection y cómo se puede prevenir?
+SQL injection es cuando por medio de los formularios u otros lados se inserta código sql
+de tal modo que pueden modificar nuestras bases de datos sin necesidad de contraseñas y de más.
+Ésto puede prevenirse tomando buenas prácticas de programación al generar código php
+que nos ayude a prevenir estos ataques con consultas preparadas.

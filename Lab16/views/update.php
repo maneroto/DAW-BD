@@ -1,0 +1,17 @@
+<?php
+    include("../sections/_header.php");
+?>
+<?php
+    include("../sections/_insertForm.php");
+?>
+<hr>
+<?php
+    include("../sections/_deleteForm.php");
+?>
+<hr>
+<?php
+    include("../sections/_updateForm.php");
+?>
+<?php
+    include("../sections/_footer.php");
+?>

@@ -9,6 +9,7 @@
         $SQLconnection = mysqli_connect($servernaame, $username, $password, $dbname);
         
         if ($SQLconnection == NULL) die ("Connection failed: ". mysqli_connect_error());
+        $SQLconnection->set_charset(" ");
         return $SQLconnection;
     }
     
