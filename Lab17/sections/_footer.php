@@ -7,13 +7,13 @@
                     </div>
                     <div class="col l4 offset-l2 s12">
                         <h5 class = "white-text">Github</h5>
-                        <a href = "https://github.com/maneroto/DAW-BD" class="grey-text text-lighten-3">https://github.com/maneroto</a>
+                        <a href = "https://github.com/maneroto/ABAK-ControlEgresados" class="grey-text text-lighten-3">ABAK-ControlEgresados</a>
                     </div>
                 </div>
             </div>
             <div class = "footer-copyright">
                 <div class = "container">
-                    @ 2019 Copyright Emmanuel Antonio Ramírez Herrera
+                    @ 2019 Copyright ABAK
                 </div>
             </div>
         </footer>

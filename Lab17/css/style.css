@@ -35,3 +35,12 @@ header .container h1
 {
     font-weight: 700;
 }
+
+.logo
+{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 10vw;
+    height: 5vh;
+}

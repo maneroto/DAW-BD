@@ -41,9 +41,9 @@
 				</div>
 				<div class="row">
 					<div class="center">
-						<form action="<?php ''.$host.''?>">
-							<button type="submit" class="waves-effect waves-light btn">Inicia a jugar ahora</button>
-						</form>
+							<a href = "<?php echo 'https://'.$host.'/lab17/views/login.php'?>">
+								<button type="submit" class="waves-effect waves-light btn">Empieza a jugar ahora</button>
+							</a>
 					</div>
 				</div>
 			</div>

@@ -21,7 +21,11 @@
                 <a href="<?php echo 'https://'.$host.'/lab17/index.php'?>" class="left brand-logo"><img src="https://cdn.worldvectorlogo.com/logos/casino-supermarket-logo.svg" class = "logo"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="<?php echo 'https://'.$host.'/lab17/views/login.php'?>">Iniciar sesión</a></li>
+                    <li><a href="<?php echo 'https://'.$host.'/lab17/views/null.php'?>">Usuarios Registrados</a>
+                    <li><a href="<?php echo 'https://'.$host.'/lab17/views/null.php'?>">Personal Habilitado</a>
+                    <li><a href="<?php echo 'https://'.$host.'/lab17/views/null.php'?>">Transacciones Realizadas</a>
+                    <li><a href="<?php echo 'https://'.$host.'/lab17/views/null.php'?>">Sub-consultas</a>
+                    <li><a href="<?php echo 'https://'.$host.'/lab17/index.php'?>">Cerrar sesión</a></li>
                 </ul>
             </div>
         </nav>
