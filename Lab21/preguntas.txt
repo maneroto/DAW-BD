@@ -1,0 +1,46 @@
+¿Qué hace el primer bloque del código (bloque del IF)?
+Lo que hace es que verifica si dentro de los objetos de la base de datos
+existe alguno que sea un procedimiento llamado 'creaMaterial' y, en caso de
+que exista, lo elimina.
+
+¿Para qué sirve la instrucción GO? 
+Lo que hace es que detiene la ejecución del código hasta que se realice
+la ejecución del código antrior el número de veces que se le indique.
+
+¿Explica que recibe como parámetro este Procedimiento y 
+qué tabla modifica?
+Recibe la clave del material a crear, junto con su nombre/descripción, costo
+e impuesto. Todo esto para poder insertar un material dentro de la tabla de
+materiales.
+
+EXECUTE queryMaterial 'Lad',20 
+Explica en tu reporte qué recibe como parámetro este procedimiento y qué hace.
+Ejecuta un query que nos da los materiales cuo nombre contenga Lad y cuesten 
+mas de $20
+
+¿Qué ventajas tienen el utilizar Stored Procedures en una aplicación 
+cliente-servidor? 
+Que ayuda a que las consultas sean más fáciles de comprender y realizar
+y que del mismo modo, nos ayuda a que sean consultas más seguras.
+
+¿Qué ventajas tiene utilizar SP en un proyecto?
+Básicamente las mismas que con una aplicación cliente-servidor
+
+Crea un Procedure para un Lab pasado
+IF EXISTS (SELECT name FROM sysobjects
+	WHERE name = 'creaFruta' AND type = 'P')
+	DROP PROCEDURE creaFruta
+GO
+ CREATE PROCEDURE creaFruta
+	@uid NUMERIC(11),
+	@uname VARCHAR(50),
+	@uunits NUMERIC(11),
+	@uquantity NUMERIC(11),
+	@uprice NUMERIC(11),
+	@ucountry VARCHAR(50)
+AS
+	INSERT INTO Fruit VALUES(@uid, @uname, @uunits, @uquantity, @uprice, @ucountry)
+GO
+
+EXECUTE creaFruta 9,'Pera',6,1,45,'Madagascar' 
+select * from Fruit
