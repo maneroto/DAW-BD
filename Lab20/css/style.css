@@ -1,0 +1,32 @@
+nav, .page-footer
+{
+    background: #01579b;
+}
+section{
+    padding-top:15vh;
+    height: 83vh;
+}
+#uForm
+{
+    width: 50vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#uForm .row
+{
+    left: 50%;
+}
+.btn
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.animated
+{
+    display:none;
+    margin: auto;
+    width: max-content;
+    height: auto;
+}
