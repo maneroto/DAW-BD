@@ -1,0 +1,7 @@
+¿Qué ventajas y desventajas tiene la integración de tus aplicaciones web 
+con servicios web desarrollados por terceros?
+Como ventaja principal se encuentra el hecho de que podemos integrar
+funcionalidades que ya existen y a las cuales se les da mantenimiento 
+constante. Pero si en algún momento la api llega a cambiar de manera radical
+o desaparece y nuestro sistema depende de ella, entonces al final, nuestro
+sistema se vuelve inservible.

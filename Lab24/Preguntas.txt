@@ -1,0 +1,33 @@
+¿Que pasa cuando deseas realizar esta consulta? 
+Permite que sin problema alguno pueda realizar la consulta.
+
+¿Qué pasa cuando deseas realizar esta consulta? 
+En este caso, ha bloqueado la consulta, no permitiendo visualizar lo que
+el otro usuario está usando en su transacción.
+
+Explica por qué ocurre dicho evento. 
+Igual que en el caso anterior, la consulta queda bloqueada o en espera hasta
+que la transacción de la cuenta 1 termine de ser ejecutada
+
+¿Qué ocurrió y por qué? 
+En esta ocación si se ha logrado ejecutar la consulta, dado que la transacción
+fué detenida desde la cuenta que la inició.
+
+Posteriormente revisa si las tablas de clientes_banca y movimientos 
+sufrieron algún cambio, es decir, si dio de alta el registro que se 
+describe en la transacción y su actualización. 
+Sí, se ha realizado la transacción de manera exitosa, añadiendo un movimiento
+bancario y actualizando la cuenta del cliente.
+
+¿Para qué sirve el comando @@ERROR?, revisa la ayuda en línea
+Sirve para lograr hacer un manejo básico de errores, ya que devuelve 0 si
+la instrucción no encuentra errores, de lo contrario devuelve el código
+de error correspondiente.
+
+¿Qué hace la transacción? 
+Se encarga de ejecutar instucciones en bloque y, si no logra ejecutar por lo
+menos una de las instrucciones, entonces no ejecuta ninguna.
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué. 
+No, porque el código de la 5a transacción está diseñado para tener un error
+por lo cual no logra insertar ninguno de los datos que se le pedían.
